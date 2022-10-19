@@ -38,7 +38,7 @@ jobs:
       - run: echo f
 
   g:
-    needs: [c, f, e]
+    needs: [f, e]
     runs-on: ubuntu-latest
     steps:
       - run: echo g
