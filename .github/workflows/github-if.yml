@@ -1,0 +1,14 @@
+name: github if test
+
+on: push
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hello
+
+  world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo World
