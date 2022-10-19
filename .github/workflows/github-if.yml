@@ -9,6 +9,7 @@ jobs:
       - run: echo Hello
 
   world:
+    if: ${{ success() }}
     runs-on: ubuntu-latest
     steps:
       - run: echo World
