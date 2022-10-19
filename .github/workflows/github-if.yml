@@ -6,7 +6,7 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo Hello
+      - run: exit 1
 
   world:
     needs: hello
