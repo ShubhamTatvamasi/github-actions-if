@@ -1,4 +1,4 @@
-name: abcdef
+name: abcdefg
 
 on: push
 
@@ -36,4 +36,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo f
+
+  g:
+    needs: [c, f, e]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo g
 
