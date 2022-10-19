@@ -1,0 +1,33 @@
+name: abcde
+
+on: push
+
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo a
+
+  b:
+    needs: a
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo b
+
+  c:
+    needs: a
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo c
+
+  d:
+    needs: [b, c]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo d
+
+  e:
+    needs: a
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo e
