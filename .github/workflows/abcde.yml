@@ -31,3 +31,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo e
+
+  f:
+    needs: a
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo f
+
