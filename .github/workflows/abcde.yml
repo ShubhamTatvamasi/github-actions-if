@@ -27,7 +27,7 @@ jobs:
       - run: echo d
 
   e:
-    needs: [a, b]
+    needs: b
     runs-on: ubuntu-latest
     steps:
       - run: echo e
